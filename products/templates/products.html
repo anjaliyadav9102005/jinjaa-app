@@ -1,0 +1,321 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | ShopEase</title>
+
+    <link rel="stylesheet" href="{% static 'css/products.css'%}">
+</head>
+
+<body>
+
+    <section class="products-page">
+
+        <!-- HEADER -->
+
+        <div class="products-header">
+
+            <div>
+                <p>EXPLORE OUR COLLECTION</p>
+                <h1>All Products</h1>
+                <span>Find something you'll love.</span>
+            </div>
+
+            <a href="index.html" class="back-home">
+                ← Back to Home
+            </a>
+
+        </div>
+
+
+        <!-- CATEGORY BUTTONS -->
+
+        <div class="category-filter">
+
+            <button class="active">All</button>
+            <button>Electronics</button>
+            <button>Fashion</button>
+            <button>Footwear</button>
+            <button>Accessories</button>
+
+        </div>
+
+
+        <!-- PRODUCTS -->
+
+        <div class="products-container">
+
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">NEW</span>
+
+                    <button class="heart">♡</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                        alt="Wireless Headphones"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">ELECTRONICS</p>
+
+                    <h3>Wireless Headphones</h3>
+
+                    <p class="price">₹1,999</p>
+                    <a href="http://127.0.0.1:8000/addtocart/"> <button class="add-cart">
+                        🛒 Add to Cart
+                    </button></a>
+
+                   
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <button class="heart">♡</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                        alt="Smart Watch"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">ELECTRONICS</p>
+
+                    <h3>Smart Watch</h3>
+
+                    <p class="price">₹2,499</p>
+
+                    <a href="http://127.0.0.1:8000/addtocart/"> <button class="add-cart">
+                        🛒 Add to Cart
+                    </button></a>
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge sale">SALE</span>
+
+                    <button class="heart">♡</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                        alt="Running Shoes"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">FOOTWEAR</p>
+
+                    <h3>Running Shoes</h3>
+
+                    <p class="price">₹2,999</p>
+
+                     <a href="http://127.0.0.1:8000/addtocart/"> <button class="add-cart">
+                        🛒 Add to Cart
+                    </button></a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <button class="heart">♡</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62"
+                        alt="Backpack"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">ACCESSORIES</p>
+
+                    <h3>Stylish Backpack</h3>
+
+                    <p class="price">₹1,499</p>
+
+                     <a href="http://127.0.0.1:8000/addtocart/"> <button class="add-cart">
+                        🛒 Add to Cart
+                    </button></a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 5 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <button class="heart">♡</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517841905240-472988babdf9"
+                        alt="Fashion Bag"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">FASHION</p>
+
+                    <h3>Classic Handbag</h3>
+
+                    <p class="price">₹1,799</p>
+
+                     <a href="http://127.0.0.1:8000/addtocart/"> <button class="add-cart">
+                        🛒 Add to Cart
+                    </button></a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 6 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">POPULAR</span>
+
+                    <button class="heart">♡</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+                        alt="Camera"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">ELECTRONICS</p>
+
+                    <h3>Digital Camera</h3>
+
+                    <p class="price">₹4,999</p>
+
+                     <a href="http://127.0.0.1:8000/addtocart/"> <button class="add-cart">
+                        🛒 Add to Cart
+                    </button></a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 7 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <button class="heart">♡</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2"
+                        alt="Shoes"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">FOOTWEAR</p>
+
+                    <h3>Casual Sneakers</h3>
+
+                    <p class="price">₹2,199</p>
+
+                    <a href="http://127.0.0.1:8000/addtocart/"> <button class="add-cart">
+                        🛒 Add to Cart
+                    </button></a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCT 8 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge sale">SALE</span>
+
+                    <button class="heart">♡</button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1596462502278-27bfdc403348"
+                        alt="Beauty Products"
+                    >
+
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">BEAUTY</p>
+
+                    <h3>Beauty Essentials</h3>
+
+                    <p class="price">₹999</p>
+
+                     <a href="http://127.0.0.1:8000/addtocart/"> <button class="add-cart">
+                        🛒 Add to Cart
+                    </button></a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

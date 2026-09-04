@@ -4,10 +4,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+    <title>ShopEase</title>
+
+    <link rel="stylesheet" href="{% static 'css/home.css'%}">
 </head>
+
 <body>
-    <p>this is my homepage</p>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">ShopEase</h1>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#">Categories</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="http://127.0.0.1:8000/wishlist/"> <button class="wishlist">♡ Wishlist</button></a>
+            <a href="http://127.0.0.1:8000/addtocart/">  <button class="cart">🛒 Cart</button></a>
+            <a href="http://127.0.0.1:8000/login/"><button class="login">Login</button></a>
+           
+            
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <p class="small-text">NEW COLLECTION 2026</p>
+
+            <h2>Shop Smarter,<br>Live Better.</h2>
+
+            <p class="description">
+                Discover the latest products, trending styles,
+                and everything you love — all in one place.
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now →
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8"
+                 alt="Shopping">
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <h2>Shop by Category</h2>
+
+        <div class="category-container">
+
+            <div class="category">
+                <div class="category-icon">👕</div>
+                <h3>Fashion</h3>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">💻</div>
+                <h3>Electronics</h3>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">👟</div>
+                <h3>Footwear</h3>
+            </div>
+
+            <div class="category">
+                <div class="category-icon">💄</div>
+                <h3>Beauty</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Products -->
+    <section class="products" id="products">
+
+        <div class="section-heading">
+            <div>
+                <p>POPULAR PRODUCTS</p>
+                <h2>Featured Products</h2>
+            </div>
+
+            <a href="#">View All →</a>
+        </div>
+
+
+        <div class="product-container">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    <span class="badge">NEW</span>
+
+                    <button class="heart">♡</button>
+
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
+                         alt="Headphones">
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">ELECTRONICS</p>
+
+                    <h3>Wireless Headphones</h3>
+
+                    <div class="product-bottom">
+                        <span class="price">₹1,999</span>
+
+                        <button class="add-cart">
+                           <a href="http://127.0.0.1:8000/addtocart/">Add to Cart</a>
+                            
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <button class="heart">♡</button>
+
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+                         alt="Smart Watch">
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">GADGETS</p>
+
+                    <h3>Smart Watch</h3>
+
+                    <div class="product-bottom">
+                        <span class="price">₹2,499</span>
+
+                        <button class="add-cart">
+                           <a href="http://127.0.0.1:8000/addtocart/">Add to Cart</a>
+                            
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge sale">SALE</span>
+
+                    <button class="heart">♡</button>
+
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+                         alt="Shoes">
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">FOOTWEAR</p>
+
+                    <h3>Running Shoes</h3>
+
+                    <div class="product-bottom">
+                        <span class="price">₹2,999</span>
+
+                        <button class="add-cart">
+                            <a href="http://127.0.0.1:8000/addtocart/">Add to Cart</a>
+                            
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <button class="heart">♡</button>
+
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62"
+                         alt="Backpack">
+                </div>
+
+                <div class="product-info">
+
+                    <p class="category-name">ACCESSORIES</p>
+
+                    <h3>Stylish Backpack</h3>
+
+                    <div class="product-bottom">
+                        <span class="price">₹1,499</span>
+
+                        <button class="add-cart">
+                           <a href="http://127.0.0.1:8000/addtocart/">Add to Cart</a>
+                            
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Banner -->
+    <section class="offer">
+
+        <div>
+            <p>LIMITED TIME OFFER</p>
+            <h2>Get Up To 50% Off</h2>
+            <span>On selected products. Don't miss out!</span>
+        </div>
+
+        <button>Shop Deals →</button>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h2>ShopEase</h2>
+
+        <p>Your favorite place for everything you love.</p>
+
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
+        </div>
+
+        <hr>
+
+        <p>© 2026 ShopEase. All rights reserved.</p>
+
+    </footer>
+
 </body>
 </html>
