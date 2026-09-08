@@ -1,0 +1,17 @@
+section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    background-color: rgba(211, 211, 225, 0.705);
+    height: 300px;
+    width: 350px;
+    text-align: center;
+    border-radius: 20px;
+}
+.name{
+    color:teal;
+}
+.email{
+    color: brown;
+}

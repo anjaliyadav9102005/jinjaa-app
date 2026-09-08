@@ -1,0 +1,10 @@
+section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    background-color: aqua;
+    height:300px;
+    width: 350px;
+    text-align: center;
+}

@@ -30,6 +30,7 @@ urlpatterns = [
     path('login/' , include('login.urls')),
     path('wishlist/',include('wishlist.urls')),
     path('products/',include('products.urls')),
+    path('logout/',include('logout.urls')),
 ]
 
 if settings.DEBUG:

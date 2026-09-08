@@ -8,98 +8,22 @@
 
     <title>Login | ShopEase</title>
 
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'logincss/login.css' %}">
 </head>
 
 <body>
 
-    <section class="login-page">
-
-        <div class="login-container">
-
-            <div class="login-header">
-
-                <a href="index.html" class="logo">
-                    ShopEase
-                </a>
-
-                <p>WELCOME BACK</p>
-
-                <h1>Login to your account</h1>
-
-                <span>
-                    Enter your details to continue shopping.
-                </span>
-
-            </div>
-
-
-            <form class="login-form">
-
-                <div class="input-group">
-
-                    <label>Email Address</label>
-
-                    <input
-                        type="email"
-                        placeholder="Enter your email"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label>Password</label>
-
-                    <input
-                        type="password"
-                        placeholder="Enter your password"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="login-options">
-
-                    <label class="remember">
-
-                        <input type="checkbox">
-
-                        Remember me
-
-                    </label>
-
-                    <a href="#">
-                        Forgot Password?
-                    </a>
-
-                </div>
-
-
-                <button type="submit" class="login-submit">
-                    <a href="http://127.0.0.1:8000/"> Login</a>
-                   
-                </button>
-
-
-                <p class="signup-text">
-
-                    Don't have an account?
-
-                    <a href="signup.html">
-                        Create Account
-                    </a>
-
-                </p>
-
-            </form>
+     <section>
+        {% block card %}
+        {% for items in info %}
+        <div class="card">
+            <h1 class="name">{{items.name}}</h1>
+            <h2 class="email">{{items.email}}</h2>
 
         </div>
-
-    </section>
+        {% endfor %}
+        {% endblock %}
+     </section>
 
 </body>
 

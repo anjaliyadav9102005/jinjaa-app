@@ -1,241 +1,42 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Shopping Cart | ShopEase</title>
-
-    <link rel="stylesheet" href="{% static 'css/addtocart.css' %}">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style/addtocart.css' %}">
 </head>
-
 <body>
 
-    <section class="cart-page">
-
-        <div class="cart-header">
-
-            <div>
-                <p>YOUR SHOPPING BAG</p>
-                <h1>Shopping Cart</h1>
-            </div>
-
-            <a href="index.html" class="continue-shopping">
-                ← Continue Shopping
-            </a>
-
-        </div>
-
-
-        <div class="cart-container">
-
-            <!-- CART ITEMS -->
-            <div class="cart-items">
-
-
-                <!-- Product 1 -->
-                <div class="cart-item">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
-                        alt="Wireless Headphones"
-                    >
-
-                    <div class="cart-product-info">
-
-                        <p class="cart-category">
-                            ELECTRONICS
-                        </p>
-
-                        <h3>Wireless Headphones</h3>
-
-                        <p class="cart-price">
-                            ₹1,999
-                        </p>
-
-                    </div>
-
-
-                    <div class="quantity">
-
-                        <button>−</button>
-
-                        <span>1</span>
-
-                        <button>+</button>
-
-                    </div>
-
-
-                    <div class="cart-total">
-                        ₹1,999
-                    </div>
-
-                    <button class="remove-btn">
-                        ✕
-                    </button>
-
-                </div>
-
-
-                <!-- Product 2 -->
-                <div class="cart-item">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
-                        alt="Smart Watch"
-                    >
-
-                    <div class="cart-product-info">
-
-                        <p class="cart-category">
-                            GADGETS
-                        </p>
-
-                        <h3>Smart Watch</h3>
-
-                        <p class="cart-price">
-                            ₹2,499
-                        </p>
-
-                    </div>
-
-
-                    <div class="quantity">
-
-                        <button>−</button>
-
-                        <span>1</span>
-
-                        <button>+</button>
-
-                    </div>
-
-
-                    <div class="cart-total">
-                        ₹2,499
-                    </div>
-
-                    <button class="remove-btn">
-                        ✕
-                    </button>
-
-                </div>
-
-
-                <!-- Product 3 -->
-                <div class="cart-item">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff"
-                        alt="Running Shoes"
-                    >
-
-                    <div class="cart-product-info">
-
-                        <p class="cart-category">
-                            FOOTWEAR
-                        </p>
-
-                        <h3>Running Shoes</h3>
-
-                        <p class="cart-price">
-                            ₹2,999
-                        </p>
-
-                    </div>
-
-
-                    <div class="quantity">
-
-                        <button>−</button>
-
-                        <span>1</span>
-
-                        <button>+</button>
-
-                    </div>
-
-
-                    <div class="cart-total">
-                        ₹2,999
-                    </div>
-
-                    <button class="remove-btn">
-                        ✕
-                    </button>
-
-                </div>
-
-            </div>
-
-
-            <!-- ORDER SUMMARY -->
-
-            <div class="order-summary">
-
-                <h2>Order Summary</h2>
-
-
-                <div class="summary-row">
-                    <span>Subtotal</span>
-                    <span>₹7,497</span>
-                </div>
-
-
-                <div class="summary-row">
-                    <span>Shipping</span>
-                    <span class="free">FREE</span>
-                </div>
-
-
-                <div class="summary-row">
-                    <span>Discount</span>
-                    <span>- ₹500</span>
-                </div>
-
-
-                <hr>
-
-
-                <div class="total-row">
-                    <h3>Total</h3>
-                    <h3>₹6,997</h3>
-                </div>
-
-
-                <!-- COUPON -->
-
-                <div class="coupon">
-
-                    <input
-                        type="text"
-                        placeholder="Enter coupon code"
-                    >
-
-                    <button>Apply</button>
-
-                </div>
-
-
-                <!-- CHECKOUT -->
-
-                <a href="#" class="checkout-btn">
-                    Proceed to Checkout →
-                </a>
-
-                <p class="secure-text">
-                    🔒 Secure Checkout
-                </p>
-
-            </div>
-
-        </div>
-
+    <section>
+    {% block card %}
+    
+    {% for items in data %}
+    
+        <div class="card">
+    
+    
+    {% if items.image %}
+    
+            <img height="100px" src="{{items.image.url}}" alt="{{items.name}}" srcset="">
+
+        {% else %}
+        <strong>no image found </strong>    
+
+        
+    {% endif %}
+    <h1 class="name">{{items.name}}</h1>
+    <h2 class="price">{{items.price}}</h2>
+
+    <button>Buy Now</button>
+
+    </div>
+    
+    {% endfor %}
+
+    {% endblock %}
     </section>
-
+    
 </body>
-
 </html>
